@@ -2,6 +2,9 @@
 
 Welcome to Pitikitikitik, a fun and playful app where users can share their favorite places through snaps and flicks. Capture and share your moments, and explore the beautiful spots shared by others.
 
+## Disclaimer
+This project is a work in progress and is currently built using MongoDB, Express, React, and Node (MERN).
+
 ## Features
 - User Authentication: Sign up, login, and manage your profile.
 - Image Posting: Upload images with titles and descriptions.
@@ -39,7 +42,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 3. **Install frontend dependencies**
     ```bash
-    cd ../frontend
+    cd ../web
     npm install
     ```
 
@@ -63,9 +66,12 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 2. **Run the frontend**
     ```bash
-    cd ../frontend
-    npm start
+    cd ../web
+    npm run dev
     ```
 
 3. **Open your browser**
     Navigate to `http://localhost:3000` to see the app in action.
+
+   
+<img align="center" alt="Camera and Buildings" src="https://jdesolate.github.io/images/pitik-img.png">
