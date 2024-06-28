@@ -4,19 +4,25 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import "./index.css";
 import ErrorPage from "./error-page";
-import Users from "./user/pages/Users";
 import NewPitik from "./pitik/pages/NewPitik";
+import Root from "./root";
+import Users from "./user/pages/Users";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Users />,
+    element: <Root />,
     errorElement: <ErrorPage />,
-  },
-  {
-    path: "pitiks/:pitikId",
-    element: <NewPitik />,
-    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "users",
+        element: <Users />,
+      },
+      {
+        path: "pitiks/new",
+        element: <NewPitik />,
+      },
+    ],
   },
 ]);
 
