@@ -1,4 +1,5 @@
 import PitikList from "../components/PitikList";
+import { useParams } from "react-router-dom";
 
 const DUMMY_PITIKS = [
   {
@@ -30,7 +31,9 @@ const DUMMY_PITIKS = [
 ];
 
 const UserPitiks = () => {
-  return <PitikList items={DUMMY_PITIKS} />;
+  const userId = useParams().userId;
+  const loadedPitiks = DUMMY_PITIKS.filter((pitik) => pitik.creator === userId);
+  return <PitikList items={loadedPitiks} />;
 };
 
 export default UserPitiks;

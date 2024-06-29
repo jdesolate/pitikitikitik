@@ -1,5 +1,6 @@
 import "./PitikItem.css";
 import Card from "../../shared/components/UIElements/Card";
+import Button from "../../shared/components/FormElements/Button";
 
 const PitikItem = (props) => {
   return (
@@ -14,9 +15,9 @@ const PitikItem = (props) => {
           <p>{props.description}</p>
         </div>
         <div className='pitik-item__actions'>
-          <button>VIEW MAP</button>
-          <button>EDIT</button>
-          <button>DELETE</button>
+          <Button inverse>VIEW MAP</Button>
+          <Button to={`/pitiks/${props.id}`}>EDIT</Button>
+          <Button danger>DELETE</Button>
         </div>
       </Card>
     </li>
