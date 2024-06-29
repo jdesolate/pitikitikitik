@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import ErrorPage from "./error-page";
 import NewPitik from "./pitik/pages/NewPitik";
+import UserPitiks from "./pitik/pages/UserPitiks";
 import Root from "./root";
 import Users from "./user/pages/Users";
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "pitiks/new",
         element: <NewPitik />,
+      },
+      {
+        path: "/:userId/pitiks",
+        element: <UserPitiks />,
       },
     ],
   },
