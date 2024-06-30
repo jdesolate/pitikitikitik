@@ -24,7 +24,6 @@ Follow these instructions to get a copy of the project up and running on your lo
 ### Prerequisites
 - Node.js and npm installed
 - MongoDB installed and running
-- AWS account (if using S3 for image storage) / TBD
 
 ### Installation
 
@@ -46,16 +45,6 @@ Follow these instructions to get a copy of the project up and running on your lo
     npm install
     ```
 
-4. **Set up environment variables**
-    Create a `.env` file in the `backend` directory and add the following:
-    ```env
-    MONGODB_URI=your_mongodb_uri
-    JWT_SECRET=your_jwt_secret
-    AWS_ACCESS_KEY_ID=your_aws_access_key_id
-    AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
-    S3_BUCKET_NAME=your_s3_bucket_name
-    ```
-
 ### Usage
 
 1. **Run the backend**
@@ -66,12 +55,8 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 2. **Run the frontend**
     ```bash
-    cd ../web
+    cd web
     npm run dev
     ```
-
-3. **Open your browser**
-    Navigate to `http://localhost:3000` to see the app in action.
-
    
 <img align="center" alt="Camera and Buildings" src="https://jdesolate.github.io/images/pitik-img.png">
