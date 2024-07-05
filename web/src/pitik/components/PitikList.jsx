@@ -5,7 +5,7 @@ import PitikItem from "./PitikItem";
 const PitikList = (props) => {
   if (props.items.length === 0) {
     return (
-      <div className="pitik-list center">
+      <div className='pitik-list center'>
         <Card>
           <h2>No pitiks found. Maybe create one?</h2>
           <button>Share Pitik</button>
@@ -15,7 +15,7 @@ const PitikList = (props) => {
   }
 
   return (
-    <ul className="pitik-list">
+    <ul className='pitik-list'>
       {props.items.map((pitik) => (
         <PitikItem
           key={pitik.id}
@@ -25,7 +25,7 @@ const PitikList = (props) => {
           description={pitik.description}
           address={pitik.address}
           creatorId={pitik.creator}
-          coordinates={pitik.coordinates}
+          coordinates={pitik.location}
         />
       ))}
     </ul>

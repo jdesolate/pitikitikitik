@@ -1,10 +1,8 @@
-import React, { useState } from "react";
-
 import "./PitikItem.css";
 import Card from "../../shared/components/UIElements/Card";
 import Button from "../../shared/components/FormElements/Button";
 import Modal from "../../shared/components/UIElements/Modal";
-import Map from "../../shared/components/UIElements/Map";
+import React, { useState } from "react";
 
 const PitikItem = (props) => {
   const [showMap, setShowMap] = useState(false);
@@ -24,7 +22,7 @@ const PitikItem = (props) => {
         footer={<Button onClick={closeMapHandler}>CLOSE</Button>}
       >
         <div className="map-container">
-          <Map center={props.coordinates} zoom={16} />
+          <h2>THE MAP!</h2>
         </div>
       </Modal>
       <li className="pitik-item">
